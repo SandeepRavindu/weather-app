@@ -1,0 +1,273 @@
+/* Weather.css – Horizontal layout matching the provided design */
+
+/* Weather page wrapper */
+.weather-page {
+  min-height: 100vh;
+  padding: 20px;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* App header */
+.weather-app-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.app-title-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.weather-emoji {
+  font-size: 2rem;
+}
+
+.app-title-section h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+  color: white;
+}
+
+/* Main weather card container */
+.weather-card-container {
+  max-width: 900px;
+  width: 100%;
+}
+
+.horizontal-weather-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Blue main section */
+.weather-main-section {
+  background: rgba(116, 185, 255, 0.25);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  position: relative;
+}
+
+.back-btn-card {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.back-btn-card:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.city-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.city-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  color: white;
+}
+
+.time-stamp {
+  font-size: 0.9rem;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.main-weather-display {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+}
+
+.weather-icon-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.weather-icon-main {
+  width: 80px;
+  height: 80px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.weather-condition {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: white;
+}
+
+.temperature-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.main-temperature {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1;
+  color: white;
+}
+
+.temp-min-max {
+  font-size: 1rem;
+  color: white;
+  opacity: 0.9;
+}
+
+/* Dark details section */
+.weather-details-section {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 30px;
+  color: white;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.detail-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.detail-label {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.detail-value {
+  font-weight: 500;
+  color: white;
+}
+
+.wind-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.wind-icon {
+  font-size: 1.5rem;
+}
+
+.wind-text {
+  font-size: 0.9rem;
+  color: white;
+  white-space: nowrap;
+}
+
+.sun-times {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sun-time-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.sun-label {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.sun-value {
+  font-weight: 500;
+  color: white;
+}
+
+/* Footer */
+.weather-footer {
+  margin-top: 40px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+.weather-footer p {
+  margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .weather-page {
+    padding: 15px;
+  }
+  
+  .horizontal-weather-card {
+    max-width: 100%;
+  }
+  
+  .weather-main-section {
+    padding: 20px;
+  }
+  
+  .main-weather-display {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .main-temperature {
+    font-size: 2.5rem;
+  }
+  
+  .weather-details-section {
+    padding: 20px;
+  }
+  
+  .details-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .wind-section {
+    order: -1;
+  }
+}
