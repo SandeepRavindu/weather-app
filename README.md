@@ -6,6 +6,78 @@ A modern, full-stack weather application built with React and Node.js, featuring
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
+📖 User Manual
+1. Getting Started
+
+Visit the deployed application:
+👉 Weather App (https://weather-app-frontend-ten-zeta.vercel.app/)
+
+Click on Log In to begin.
+
+2. Login & Authentication
+
+Enter your email and password.
+
+Complete Multi-Factor Authentication (MFA):
+
+By default, you may be asked for a one-time code from Google Authenticator (or another authenticator app).
+
+If you prefer email verification:
+
+Click “Try another method”.
+
+Select Email.
+
+Enter the one-time code you receive in your inbox.
+
+✅ Tip: If you don’t see the email, check your Spam/Promotions folder.
+
+3. Dashboard
+
+After login, you’ll see the Dashboard with weather cards for some main cities (e.g., Colombo, Tokyo, Paris, Sydney, etc.).
+
+Each card shows:
+
+City name
+
+Current temperature
+
+Weather condition (icon + description)
+
+Additional info like min/max temperature, pressure, humidity, sunrise/sunset.
+
+🔍 Click any card to view detailed weather information.
+
+4. Search Function
+
+Use the Search Bar to look up any city.
+
+Start typing — the app will show suggestions from the city list.
+
+Select a city or press Enter to fetch its weather.
+
+Weather data includes:
+
+City name & country
+
+Current temperature
+
+Weather condition (clear, cloudy, rain, etc.)
+
+Min/Max temp, pressure, humidity, wind speed, sunrise/sunset.
+
+5. Data Caching
+
+To optimize performance, weather results are cached for 5 minutes.
+
+If you search the same city again within 5 minutes, cached data is shown (no extra API calls).
+
+After 5 minutes, fresh data will be fetched from OpenWeatherMap.
+
+6. Logout
+
+To end your session securely, click the Logout button.
+
 ## 🚀 Features
 
 ### Core Functionality
