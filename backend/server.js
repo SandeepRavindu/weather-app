@@ -19,7 +19,12 @@ await connectDB();
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:3000'], // Add both Vite ports
+  origin: [
+    'http://localhost:5173', 
+    'http://localhost:5174', 
+    'http://localhost:3000',
+    'https://weather-app-frontend-ten-zeta.vercel.app'
+  ],
   credentials: true
 }));
 app.use(express.json());
