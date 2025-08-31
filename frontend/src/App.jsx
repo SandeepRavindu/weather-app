@@ -81,7 +81,11 @@ const App = () => {
                       <span className="text-green-400">Logged in</span>
                     </div>
                     <button 
-                      onClick={() => logout()}
+                      onClick={() => logout({ 
+                        logoutParams: { 
+                          returnTo: 'https://weather-app-frontend-ten-zeta.vercel.app' 
+                        }
+                      })}
                       className="px-4 py-2 transition-colors bg-red-600 rounded-lg hover:bg-red-700"
                     >
                       Logout
