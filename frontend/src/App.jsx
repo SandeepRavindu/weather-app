@@ -36,7 +36,7 @@ const App = () => {
 
   if (isLoading) {
     return (
-      <div className="flex items-center justify-center min-h-screen bg-gray-900">
+      <div className="flex items-center justify-center min-h-screen">
         <div className="text-xl text-white">Loading...</div>
       </div>
     );
@@ -44,9 +44,9 @@ const App = () => {
   
   return (
     <Router>
-      <div className='min-h-screen bg-gray-900 app'>
+      <div className='min-h-screen app'>
         {/* Header with Auth */}
-        <header className="text-white bg-gray-800 shadow-lg">
+        <header className="text-white bg-gray-800 bg-opacity-90 shadow-lg">
           <div className="container px-4 py-3 mx-auto">
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-4">
@@ -129,7 +129,7 @@ const App = () => {
             </>
           ) : (
             <div className="text-center text-white">
-              <div className="max-w-md p-8 mx-auto bg-gray-800 rounded-lg shadow-lg">
+              <div className="max-w-md p-8 mx-auto bg-gray-800 bg-opacity-90 rounded-lg shadow-lg backdrop-blur-sm">
                 <h2 className="mb-4 text-2xl font-bold">Welcome to Weather App</h2>
                 <p className="mb-6 text-gray-300">
                   Please log in to access weather information and forecasts.
